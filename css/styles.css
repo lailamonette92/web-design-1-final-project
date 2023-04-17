@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    font-family:'Varela Round', sans-serif;
+}
+header {
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;    
+}
+
+nav h1{
+    font-size: 42pt;
+    color:white;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    padding-top: 40px; /*Good enough for now */
+    font-size: 20pt;
+}
+
+#girl {
+    float: right;
+    grid-area: "image"
+}
+
+nav li {
+    text-decoration: none;
+    display: inline;
+    margin: 25px;
+}
+
+.hero-image {
+
+    display: grid;    
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "banner";
+    gap: 1rem;
+}
+
+.hero-image img{
+    grid-area: "banner";
+    height: 90vh;
+    width: 90vw;    
+    background-position: center;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#AboutMe {
+    background-color:white;
+
+    display:grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    grid-template-areas: 
+    "intro image";
+}
+
+#what_i_can_do{
+    background-color: whitesmoke;
+}
+
+.about_me_intro {
+    grid-area: "intro";
+}
+
+#what_i_can_do h2 {
+    text-align: center;
+}
+
+#panels {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "logo_creation web_design full_branding";
+    gap: 5rem;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+#logo_creation {
+    grid-area: "logo_creation";
+}
+
+#web_design {
+    grid-area: "web_design";
+}
+
+#full_branding {
+    grid-area: "full_branding";
+}
+
+#my_work h2 {
+    text-align: center;
+}
+
+
+
+.portfolio_images {
+    display: grid;
+    place-items: center;
+
+    grid-template-columns: min(3fr) repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "top-left top-left top-left top-right top-right top-right"
+    "bot-left bot-left bot-mid bot-mid bot-right bot-right";    
+    grid-gap: 0;
+    max-width: fit-content;
+    min-width: fit-content; 
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  
+
+  .portfolio_images img:nth-child(1) {
+    grid-area: top-left;
+  }
+  .portfolio_images img:nth-child(2) {
+    grid-area: top-right;
+  }
+  .portfolio_images img:nth-child(3) {
+    grid-area: bot-left;
+  }
+  .portfolio_images img:nth-child(4) {
+    grid-area: bot-mid;
+  }
+  .portfolio_images img:nth-child(5) {
+    grid-area: bot-right;
+  }
+  /*.portfolio-images img:nth-child(1),
+  .portfolio-images img:nth-child(2) {
+    grid-row: 1 / span 2;
+  }
+  
+  .portfolio-images img {
+    border: none;
+  }
+*/
+.quotes {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    
+    padding: 20px;
+}
+
+.quote {
+    font-size: 24px;
+    font-style: italic;
+    line-height: 1.4;
+    max-width: 90%;
+    text-align: center;
+}
+
+#reviews {
+    background-color: black;
+    color: white;
+}
+
+#socials {
+    background-color: white;
+}
+ 
+  
